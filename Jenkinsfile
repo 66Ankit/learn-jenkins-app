@@ -50,7 +50,7 @@ pipeline {
                 sh '''
                     npm netlify --version
                     echo "deploying to production site ID : $NETLIFY_SITE_ID"
-                    npm netlify status
+                    node_modules/.bin/netlify status
                 '''
             }
 
